@@ -73,7 +73,6 @@
     <title>浅谈 Scrapy 爬虫框架</title>
     <url>/post/%E6%B5%85%E8%B0%88Scrapy%E7%88%AC%E8%99%AB%E6%A1%86%E6%9E%B6/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>之前有篇<a href="https://www.luogu.com.cn/blog/12cow/python">日报</a>讲了 Python 爬虫，也提到了 Scrapy 爬虫框架。</p>
-<p>那么今天，就来给大家讲一讲 Scrapy 爬虫框架。（</p>
 <p>前置芝士：Python，爬虫，一定的 HTML 知识。</p>
 <span id="more"></span>
 
@@ -100,7 +99,7 @@
 <p>有人可能会问：“既然都会编写爬虫了，还要爬虫框架有什么用呢？”</p>
 <p>打个比方，自己写爬虫就好像小工坊，可以造东西，但做大项目效率不高；爬虫框架就好比工厂，可以流水线制造，效率也高。<del>烂比喻</del></p>
 <h2 id="二、安装Scrapy爬虫框架"><a href="#二、安装Scrapy爬虫框架" class="headerlink" title="二、安装Scrapy爬虫框架"></a>二、安装Scrapy爬虫框架</h2><p>理论上可以用 pip（python 的包管理工具）来安装，但<del>因为某些玄学原因</del>总是安装失败。建议使用 Anaconda 或 Miniconda 来安装。Anaconda 是在 conda（一个包管理工具）上发展出来的，附带了很多<del>没用的</del>包，但我们不需要他们，因而选择 <strong>Miniconda</strong> （一个 Anaconda 的轻量级替代），下载地址：<a href="https://conda.io/miniconda.html">https://conda.io/miniconda.html</a>。下载当前系统对应的版本后按默认安装。</p>
-<p>完成后，打开开始菜单找到 <strong>Anaconda Prompt</strong> 程序，输入命令 <code>conda install -c conda-forge scrapy</code> 即可（<del>你问我命令为何如此长？我咋知道</del>）。</p>
+<p>完成后，打开开始菜单找到 <strong>Anaconda Prompt</strong> 程序，输入命令 <code>conda install -c conda-forge scrapy</code> 即可。</p>
 <h2 id="三、Scrapy爬虫框架架构"><a href="#三、Scrapy爬虫框架架构" class="headerlink" title="三、Scrapy爬虫框架架构"></a>三、Scrapy爬虫框架架构</h2><p>在开始前，需要先来了解一下 Scrapy 的架构和组件间的交互。</p>
 <p>如图：</p>
 <p><img src="https://doc.scrapy.org/en/latest/_images/scrapy_architecture_02.png"></p>
